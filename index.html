@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Administrador de Tareas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TASK MANAGER</h1>
+        <div class="form">
+            <input type="text" id="taskInput" placeholder="Escribe tu nueva tarea aquí...">
+            <button onclick="createTask()">Publicar</button>
+        </div>
+        <div class="board">
+            <div class="column">
+                <h2>To Do</h2>
+                <div id="todoColumn" class="task-column" ondrop="drop(event, 'todo')" ondragover="allowDrop(event)">
+                </div>
+            </div>
+            <div class="column">
+                <h2>Doing</h2>
+                <div id="doingColumn" class="task-column" ondrop="drop(event, 'doing')" ondragover="allowDrop(event)">
+                </div>
+            </div>
+            <div class="column">
+                <h2>Done</h2>
+                <div id="doneColumn" class="task-column" ondrop="drop(event, 'done')" ondragover="allowDrop(event)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
