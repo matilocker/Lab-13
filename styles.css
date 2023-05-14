@@ -24,6 +24,10 @@ button {
     padding: 10px;
 }
 
+.publicar {
+    background-color: rgb(149, 149, 253);
+}
+
 .board {
     display: flex;
     justify-content: space-between;
